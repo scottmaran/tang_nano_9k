@@ -1,0 +1,3648 @@
+{
+  "creator": "Next Generation Place and Route (Version nextpnr-0.7-149-g155adc3f)",
+  "modules": {
+    "top": {
+      "settings": {
+        "route": "00000000000000000000000000000001",
+        "router/tmg_ripup": "0 ",
+        "router1/useEstimate": "1 ",
+        "router1/fullCleanupReroute": "1 ",
+        "router1/cleanupReroute": "1 ",
+        "router1/maxIterCnt": "200",
+        "place": "00000000000000000000000000000001",
+        "placer1/startTemp": "1.000000",
+        "placer1/minBelsForGridPick": "64",
+        "placer1/netShareWeight": "0.000000",
+        "placer1/constraintWeight": "10.000000",
+        "placerHeap/cellPlacementTimeout": "8",
+        "placerHeap/netShareWeight": "0.000000",
+        "placerHeap/parallelRefine": "0 ",
+        "pack": "00000000000000000000000000000001",
+        "synth": "00000000000000000000000000000001",
+        "placerHeap/timingWeight": "10 ",
+        "placerHeap/criticalityExponent": "2",
+        "placerHeap/beta": "0.900000",
+        "placerHeap/alpha": "0.100000",
+        "seed": "0011000101000001010110010010011001010011010110001001011110010011",
+        "arch.type": " ",
+        "arch.name": "ARCHNAME",
+        "router": "router1",
+        "placer": "heap",
+        "auto_freq": "00000000000000000000000000000000",
+        "slack_redist_iter": "00000000000000000000000000000000",
+        "timing_driven": "00000000000000000000000000000001",
+        "target_freq": "12000000.000000",
+        "cst.filename": "tangnano9k.cst",
+        "packer.partno": "GW1NR-LV9QN88PC6/I5",
+        "packer.chipdb": "GW1N-9C",
+        "packer.arch": "himbaechel/gowin"
+      },
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "counter.v:1.1-20.10"
+      },
+      "ports": {
+        "led": {
+          "direction": "output",
+          "bits": [ 7807, 7805, 7803, 7801, 7799, 7797 ]
+        },
+        "clk": {
+          "direction": "input",
+          "bits": [ 7601 ]
+        }
+      },
+      "cells": {
+        "clockCounter_DFFR_Q_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X5Y16/LUT2"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7870 ],
+            "I3": [ 7608 ]
+          }
+        },
+        "clockCounter_DFFR_Q_1_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X5Y16/LUT4"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7868 ],
+            "I3": [ 7613 ]
+          }
+        },
+        "clockCounter_DFFR_Q_11_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X3Y15/LUT1"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7866 ],
+            "I3": [ 7625 ]
+          }
+        },
+        "clockCounter_DFFR_Q_12_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X3Y15/LUT5"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7864 ],
+            "I3": [ 7631 ]
+          }
+        },
+        "clockCounter_DFFR_Q_15_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X2Y15/LUT2"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7862 ],
+            "I3": [ 7646 ]
+          }
+        },
+        "clockCounter_DFFR_Q_16_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X2Y15/LUT1"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7860 ],
+            "I3": [ 7651 ]
+          }
+        },
+        "clockCounter_DFFR_Q_17_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X2Y15/LUT3"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7858 ],
+            "I3": [ 7657 ]
+          }
+        },
+        "clockCounter_DFFR_Q_18_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X2Y15/LUT4"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7856 ],
+            "I3": [ 7663 ]
+          }
+        },
+        "clockCounter_DFFR_Q_19_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X1Y15/LUT1"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7854 ],
+            "I3": [ 7669 ]
+          }
+        },
+        "clockCounter_DFFR_Q_20_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X1Y15/LUT3"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7852 ],
+            "I3": [ 7681 ]
+          }
+        },
+        "clockCounter_DFFR_Q_21_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X1Y15/LUT4"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7850 ],
+            "I3": [ 7686 ]
+          }
+        },
+        "clockCounter_DFFR_Q_3_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X4Y15/LUT2"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7848 ],
+            "I3": [ 7704 ]
+          }
+        },
+        "clockCounter_DFFR_Q_4_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X4Y15/LUT4"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7846 ],
+            "I3": [ 7709 ]
+          }
+        },
+        "clockCounter_DFFR_Q_7_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X3Y15/LUT2"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7844 ],
+            "I3": [ 7724 ]
+          }
+        },
+        "clockCounter_DFFR_Q_8_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X3Y15/LUT4"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7842 ],
+            "I3": [ 7729 ]
+          }
+        },
+        "ledCounter_DFFE_Q_1_passthrough_lut$": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "00000000000000001111111100000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X1Y17/LUT2"
+          },
+          "port_directions": {
+            "F": "output",
+            "I3": "input"
+          },
+          "connections": {
+            "F": [ 7840 ],
+            "I3": [ 7745 ]
+          }
+        },
+        "clockCounter_DFFR_Q_D_ALU_SUM_DUMMY_ALULC": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "C2L"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y16/ALU1"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "clockCounter_DFFR_Q_22_D_ALU_SUM_CIN_ALU_COUT_HEAD_ALULC": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "C2L"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/ALU0"
+          },
+          "port_directions": {
+            "I2": "input",
+            "COUT": "output"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "COUT": [ 7827 ]
+          }
+        },
+        "ledCounter_DFFE_Q_D_ALU_SUM_DUMMY_ALULC": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "C2L"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y17/ALU1"
+          },
+          "port_directions": {
+          },
+          "connections": {
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_CIN_ALU_COUT_HEAD_ALULC": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "C2L"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/ALU0"
+          },
+          "port_directions": {
+            "I2": "input",
+            "COUT": "output"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "COUT": [ 7825 ]
+          }
+        },
+        "GSR": {
+          "hide_name": 0,
+          "type": "GSR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y0/GSR"
+          },
+          "port_directions": {
+            "GSRI": "input"
+          },
+          "connections": {
+            "GSRI": [ 7820 ]
+          }
+        },
+        "led_OBUF_O_5": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y14/IOBA",
+            "src": "counter.v:4.18-4.21",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7807 ],
+            "I": [ 7766 ]
+          }
+        },
+        "led_OBUF_O_4": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y15/IOBB",
+            "src": "counter.v:4.18-4.21",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7805 ],
+            "I": [ 7762 ]
+          }
+        },
+        "led_OBUF_O_3": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y20/IOBB",
+            "src": "counter.v:4.18-4.21",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7803 ],
+            "I": [ 7757 ]
+          }
+        },
+        "led_OBUF_O_2": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y21/IOBB",
+            "src": "counter.v:4.18-4.21",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7801 ],
+            "I": [ 7752 ]
+          }
+        },
+        "led_OBUF_O_1": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y24/IOBB",
+            "src": "counter.v:4.18-4.21",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7799 ],
+            "I": [ 7746 ]
+          }
+        },
+        "led_OBUF_O": {
+          "hide_name": 0,
+          "type": "OBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X0Y25/IOBB",
+            "src": "counter.v:4.18-4.21",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7797 ],
+            "I": [ 7743 ]
+          }
+        },
+        "$PACKER_GND_DRV": {
+          "hide_name": 1,
+          "type": "GOWIN_GND",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y0/GND"
+          },
+          "port_directions": {
+            "G": "output"
+          },
+          "connections": {
+            "G": [ 7821 ]
+          }
+        },
+        "$PACKER_VCC_DRV": {
+          "hide_name": 1,
+          "type": "GOWIN_VCC",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y0/VCC"
+          },
+          "port_directions": {
+            "V": "output"
+          },
+          "connections": {
+            "V": [ 7820 ]
+          }
+        },
+        "ledCounter_DFFE_Q_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y17/ALU0",
+            "src": "counter.v:15.23-15.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7742 ],
+            "I3": [ 7820 ],
+            "I1": [ 7743 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7793 ],
+            "CIN": [ 7749 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_S0_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000010000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y15/LUT5",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7647 ],
+            "I2": [ 7642 ],
+            "I1": [ 7637 ],
+            "I0": [ 7632 ],
+            "F": [ 7781 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_I1_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y15/LUT7",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:153.41-153.66|/usr/local/bin/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7627 ],
+            "I2": [ 7618 ],
+            "I1": [ 7737 ],
+            "I0": [ 7731 ],
+            "F": [ 7780 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_I0_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "00"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y15/LUT6",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:152.41-152.66|/usr/local/bin/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [  ],
+            "F": [ 7779 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_1_S0_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y15/LUT2",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7696 ],
+            "I2": [ 7692 ],
+            "I1": [ 7687 ],
+            "I0": [ 7682 ],
+            "F": [ 7785 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_1_I1_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000001000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y15/LUT7",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:153.41-153.66|/usr/local/bin/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7671 ],
+            "I2": [ 7665 ],
+            "I1": [ 7659 ],
+            "I0": [ 7653 ],
+            "F": [ 7784 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_1_I0_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "00"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y15/LUT6",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:152.41-152.66|/usr/local/bin/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [  ],
+            "F": [ 7783 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_1": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y15/MUX6",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7785 ],
+            "O": [ 7775 ],
+            "I1": [ 7784 ],
+            "I0": [ 7783 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y15/MUX6",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:154.14-154.54",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "S0": "input",
+            "O": "output",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "S0": [ 7781 ],
+            "O": [ 7774 ],
+            "I1": [ 7780 ],
+            "I0": [ 7779 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_LUT4_F_1": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000000000001000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y16/LUT7",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7705 ],
+            "I2": [ 7679 ],
+            "I1": [ 7614 ],
+            "I0": [ 7609 ],
+            "F": [ 7773 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "0000100000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/LUT7",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7725 ],
+            "I2": [ 7720 ],
+            "I1": [ 7715 ],
+            "I0": [ 7710 ],
+            "F": [ 7772 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F": {
+          "hide_name": 0,
+          "type": "LUT4",
+          "parameters": {
+            "INIT": "1000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y15/LUT0",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:147.23-148.48",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I2": "input",
+            "I1": "input",
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I3": [ 7775 ],
+            "I2": [ 7774 ],
+            "I1": [ 7773 ],
+            "I0": [ 7772 ],
+            "F": [ 7610 ]
+          }
+        },
+        "ledCounter_DFFE_Q_5_D_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y15/LUT0",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7766 ],
+            "F": [ 7769 ]
+          }
+        },
+        "ledCounter_DFFE_Q_5": {
+          "hide_name": 0,
+          "type": "DFFE",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y15/DFF0",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:19.7-19.56",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input",
+            "CE": "input"
+          },
+          "connections": {
+            "Q": [ 7766 ],
+            "D": [ 7769 ],
+            "CLK": [ 7605 ],
+            "CE": [ 7610 ]
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_CIN_ALU_COUT": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/ALU1",
+            "src": "counter.v:15.23-15.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7767 ],
+            "I3": [ 7820 ],
+            "I1": [ 7766 ],
+            "I0": [ 7820 ],
+            "COUT": [ 7764 ],
+            "CIN": [ 7825 ]
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/ALU2",
+            "src": "counter.v:15.23-15.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7761 ],
+            "I3": [ 7820 ],
+            "I1": [ 7762 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7759 ],
+            "CIN": [ 7764 ]
+          }
+        },
+        "ledCounter_DFFE_Q_4": {
+          "hide_name": 0,
+          "type": "DFFE",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/DFF2",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:19.7-19.56",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input",
+            "CE": "input"
+          },
+          "connections": {
+            "Q": [ 7762 ],
+            "D": [ 7761 ],
+            "CLK": [ 7605 ],
+            "CE": [ 7610 ]
+          }
+        },
+        "ledCounter_DFFE_Q_3_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/ALU3",
+            "src": "counter.v:15.23-15.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7756 ],
+            "I3": [ 7820 ],
+            "I1": [ 7757 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7754 ],
+            "CIN": [ 7759 ]
+          }
+        },
+        "ledCounter_DFFE_Q_3": {
+          "hide_name": 0,
+          "type": "DFFE",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/DFF3",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:19.7-19.56",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input",
+            "CE": "input"
+          },
+          "connections": {
+            "Q": [ 7757 ],
+            "D": [ 7756 ],
+            "CLK": [ 7605 ],
+            "CE": [ 7610 ]
+          }
+        },
+        "ledCounter_DFFE_Q_2_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/ALU4",
+            "src": "counter.v:15.23-15.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7751 ],
+            "I3": [ 7820 ],
+            "I1": [ 7752 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7748 ],
+            "CIN": [ 7754 ]
+          }
+        },
+        "ledCounter_DFFE_Q_2": {
+          "hide_name": 0,
+          "type": "DFFE",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/DFF4",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:19.7-19.56",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input",
+            "CE": "input"
+          },
+          "connections": {
+            "Q": [ 7752 ],
+            "D": [ 7751 ],
+            "CLK": [ 7605 ],
+            "CE": [ 7610 ]
+          }
+        },
+        "ledCounter_DFFE_Q_1_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y17/ALU5",
+            "src": "counter.v:15.23-15.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7745 ],
+            "I3": [ 7820 ],
+            "I1": [ 7746 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7749 ],
+            "CIN": [ 7748 ]
+          }
+        },
+        "ledCounter_DFFE_Q_1": {
+          "hide_name": 0,
+          "type": "DFFE",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y17/DFF2",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:19.7-19.56",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input",
+            "CE": "input"
+          },
+          "connections": {
+            "Q": [ 7746 ],
+            "D": [ 7840 ],
+            "CLK": [ 7605 ],
+            "CE": [ 7610 ]
+          }
+        },
+        "ledCounter_DFFE_Q": {
+          "hide_name": 0,
+          "type": "DFFE",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y17/DFF0",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:19.7-19.56",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "D": "input",
+            "CLK": "input",
+            "CE": "input"
+          },
+          "connections": {
+            "Q": [ 7743 ],
+            "D": [ 7742 ],
+            "CLK": [ 7605 ],
+            "CE": [ 7610 ]
+          }
+        },
+        "clockCounter_DFFR_Q_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y16/ALU0",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7608 ],
+            "I3": [ 7820 ],
+            "I1": [ 7609 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7740 ],
+            "CIN": [ 7676 ]
+          }
+        },
+        "clockCounter_DFFR_Q_9_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/ALU3",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7735 ],
+            "I3": [ 7820 ],
+            "I1": [ 7737 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7733 ],
+            "CIN": [ 7621 ]
+          }
+        },
+        "clockCounter_DFFR_Q_9": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/DFF3",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7737 ],
+            "D": [ 7735 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_8_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/ALU4",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7729 ],
+            "I3": [ 7820 ],
+            "I1": [ 7731 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7727 ],
+            "CIN": [ 7733 ]
+          }
+        },
+        "clockCounter_DFFR_Q_8": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y15/DFF4",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7731 ],
+            "D": [ 7842 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_7_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/ALU5",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7724 ],
+            "I3": [ 7820 ],
+            "I1": [ 7725 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7722 ],
+            "CIN": [ 7727 ]
+          }
+        },
+        "clockCounter_DFFR_Q_7": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y15/DFF2",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7725 ],
+            "D": [ 7844 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_6_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/ALU0",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7719 ],
+            "I3": [ 7820 ],
+            "I1": [ 7720 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7717 ],
+            "CIN": [ 7722 ]
+          }
+        },
+        "clockCounter_DFFR_Q_6": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/DFF0",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7720 ],
+            "D": [ 7719 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_5_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/ALU1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7714 ],
+            "I3": [ 7820 ],
+            "I1": [ 7715 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7712 ],
+            "CIN": [ 7717 ]
+          }
+        },
+        "clockCounter_DFFR_Q_5": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/DFF1",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7715 ],
+            "D": [ 7714 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_4_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/ALU2",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7709 ],
+            "I3": [ 7820 ],
+            "I1": [ 7710 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7707 ],
+            "CIN": [ 7712 ]
+          }
+        },
+        "clockCounter_DFFR_Q_4": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y15/DFF4",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7710 ],
+            "D": [ 7846 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_3_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/ALU3",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7704 ],
+            "I3": [ 7820 ],
+            "I1": [ 7705 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7702 ],
+            "CIN": [ 7707 ]
+          }
+        },
+        "clockCounter_DFFR_Q_3": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y15/DFF2",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7705 ],
+            "D": [ 7848 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_2_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/ALU4",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7678 ],
+            "I3": [ 7820 ],
+            "I1": [ 7679 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7675 ],
+            "CIN": [ 7702 ]
+          }
+        },
+        "clockCounter_DFFR_Q_23_D_LUT1_F": {
+          "hide_name": 0,
+          "type": "LUT1",
+          "parameters": {
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y15/LUT0",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:135.23-136.15",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I0": "input",
+            "F": "output"
+          },
+          "connections": {
+            "I0": [ 7696 ],
+            "F": [ 7699 ]
+          }
+        },
+        "clockCounter_DFFR_Q_23": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y15/DFF0",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7696 ],
+            "D": [ 7699 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_22_D_ALU_SUM_CIN_ALU_COUT": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/ALU1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7697 ],
+            "I3": [ 7820 ],
+            "I1": [ 7696 ],
+            "I0": [ 7820 ],
+            "COUT": [ 7694 ],
+            "CIN": [ 7827 ]
+          }
+        },
+        "clockCounter_DFFR_Q_22_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/ALU2",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7691 ],
+            "I3": [ 7820 ],
+            "I1": [ 7692 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7689 ],
+            "CIN": [ 7694 ]
+          }
+        },
+        "clockCounter_DFFR_Q_22": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/DFF2",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7692 ],
+            "D": [ 7691 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_21_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/ALU3",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7686 ],
+            "I3": [ 7820 ],
+            "I1": [ 7687 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7684 ],
+            "CIN": [ 7689 ]
+          }
+        },
+        "clockCounter_DFFR_Q_21": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y15/DFF4",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7687 ],
+            "D": [ 7850 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_20_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/ALU4",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7681 ],
+            "I3": [ 7820 ],
+            "I1": [ 7682 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7673 ],
+            "CIN": [ 7684 ]
+          }
+        },
+        "clockCounter_DFFR_Q_20": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y15/DFF3",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7682 ],
+            "D": [ 7852 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_2": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/DFF4",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7679 ],
+            "D": [ 7678 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_1_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X4Y16/ALU5",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7613 ],
+            "I3": [ 7820 ],
+            "I1": [ 7614 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7676 ],
+            "CIN": [ 7675 ]
+          }
+        },
+        "clockCounter_DFFR_Q_19_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y16/ALU5",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7669 ],
+            "I3": [ 7820 ],
+            "I1": [ 7671 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7667 ],
+            "CIN": [ 7673 ]
+          }
+        },
+        "clockCounter_DFFR_Q_19": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y15/DFF1",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7671 ],
+            "D": [ 7854 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_18_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/ALU0",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7663 ],
+            "I3": [ 7820 ],
+            "I1": [ 7665 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7661 ],
+            "CIN": [ 7667 ]
+          }
+        },
+        "clockCounter_DFFR_Q_18": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y15/DFF4",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7665 ],
+            "D": [ 7856 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_17_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/ALU1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7657 ],
+            "I3": [ 7820 ],
+            "I1": [ 7659 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7655 ],
+            "CIN": [ 7661 ]
+          }
+        },
+        "clockCounter_DFFR_Q_17": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y15/DFF3",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7659 ],
+            "D": [ 7858 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_16_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/ALU2",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7651 ],
+            "I3": [ 7820 ],
+            "I1": [ 7653 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7649 ],
+            "CIN": [ 7655 ]
+          }
+        },
+        "clockCounter_DFFR_Q_16": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y15/DFF1",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7653 ],
+            "D": [ 7860 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_15_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/ALU3",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7646 ],
+            "I3": [ 7820 ],
+            "I1": [ 7647 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7644 ],
+            "CIN": [ 7649 ]
+          }
+        },
+        "clockCounter_DFFR_Q_15": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y15/DFF2",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7647 ],
+            "D": [ 7862 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_14_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/ALU4",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7641 ],
+            "I3": [ 7820 ],
+            "I1": [ 7642 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7639 ],
+            "CIN": [ 7644 ]
+          }
+        },
+        "clockCounter_DFFR_Q_14": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/DFF4",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7642 ],
+            "D": [ 7641 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_13_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/ALU5",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7636 ],
+            "I3": [ 7820 ],
+            "I1": [ 7637 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7634 ],
+            "CIN": [ 7639 ]
+          }
+        },
+        "clockCounter_DFFR_Q_13": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X2Y16/DFF5",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7637 ],
+            "D": [ 7636 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_12_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/ALU0",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7631 ],
+            "I3": [ 7820 ],
+            "I1": [ 7632 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7629 ],
+            "CIN": [ 7634 ]
+          }
+        },
+        "clockCounter_DFFR_Q_12": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y15/DFF5",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7632 ],
+            "D": [ 7864 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_11_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/ALU1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7625 ],
+            "I3": [ 7820 ],
+            "I1": [ 7627 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7620 ],
+            "CIN": [ 7629 ]
+          }
+        },
+        "clockCounter_DFFR_Q_11": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y15/DFF1",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7627 ],
+            "D": [ 7866 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_10_D_ALU_SUM": {
+          "hide_name": 0,
+          "type": "ALU",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/ALU2",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I2": "input",
+            "SUM": "output",
+            "I3": "input",
+            "I1": "input",
+            "I0": "input",
+            "COUT": "output",
+            "CIN": "input"
+          },
+          "connections": {
+            "I2": [ 7820 ],
+            "SUM": [ 7616 ],
+            "I3": [ 7820 ],
+            "I1": [ 7618 ],
+            "I0": [ 7821 ],
+            "COUT": [ 7621 ],
+            "CIN": [ 7620 ]
+          }
+        },
+        "clockCounter_DFFR_Q_10": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X3Y16/DFF2",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7618 ],
+            "D": [ 7616 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q_1": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y16/DFF4",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7614 ],
+            "D": [ 7868 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clockCounter_DFFR_Q": {
+          "hide_name": 0,
+          "type": "DFFR",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X5Y16/DFF2",
+            "src": "counter.v:11.1-17.4|/usr/local/bin/../share/yosys/gowin/cells_map.v:31.7-31.59",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "input",
+            "Q": "output",
+            "D": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "RESET": [ 7610 ],
+            "Q": [ 7609 ],
+            "D": [ 7870 ],
+            "CLK": [ 7605 ]
+          }
+        },
+        "clk_IBUF_I": {
+          "hide_name": 0,
+          "type": "IBUF",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_O": "NET"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000101",
+            "NEXTPNR_BEL": "X46Y16/IOBA",
+            "src": "counter.v:3.11-3.14",
+            "&PULL_MODE=UP": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "I": "input"
+          },
+          "connections": {
+            "O": [ 7605 ],
+            "I": [ 7601 ]
+          }
+        }
+      },
+      "netnames": {
+        "clockCounter_DFFR_Q$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7870 ] ,
+          "attributes": {
+            "ROUTING": "X5Y16/F2;;1;X5Y16/XD2;X5Y16/XD2/F2;1"
+          }
+        },
+        "clockCounter_DFFR_Q_1$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7868 ] ,
+          "attributes": {
+            "ROUTING": "X5Y16/F4;;1;X5Y16/XD4;X5Y16/XD4/F4;1"
+          }
+        },
+        "clockCounter_DFFR_Q_11$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7866 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/F1;;1;X3Y15/XD1;X3Y15/XD1/F1;1"
+          }
+        },
+        "clockCounter_DFFR_Q_12$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7864 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/F5;;1;X3Y15/XD5;X3Y15/XD5/F5;1"
+          }
+        },
+        "clockCounter_DFFR_Q_15$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7862 ] ,
+          "attributes": {
+            "ROUTING": "X2Y15/F2;;1;X2Y15/XD2;X2Y15/XD2/F2;1"
+          }
+        },
+        "clockCounter_DFFR_Q_16$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7860 ] ,
+          "attributes": {
+            "ROUTING": "X2Y15/F1;;1;X2Y15/XD1;X2Y15/XD1/F1;1"
+          }
+        },
+        "clockCounter_DFFR_Q_17$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7858 ] ,
+          "attributes": {
+            "ROUTING": "X2Y15/F3;;1;X2Y15/XD3;X2Y15/XD3/F3;1"
+          }
+        },
+        "clockCounter_DFFR_Q_18$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7856 ] ,
+          "attributes": {
+            "ROUTING": "X2Y15/F4;;1;X2Y15/XD4;X2Y15/XD4/F4;1"
+          }
+        },
+        "clockCounter_DFFR_Q_19$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7854 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/F1;;1;X1Y15/XD1;X1Y15/XD1/F1;1"
+          }
+        },
+        "clockCounter_DFFR_Q_20$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7852 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/F3;;1;X1Y15/XD3;X1Y15/XD3/F3;1"
+          }
+        },
+        "clockCounter_DFFR_Q_21$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7850 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/F4;;1;X1Y15/XD4;X1Y15/XD4/F4;1"
+          }
+        },
+        "clockCounter_DFFR_Q_3$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7848 ] ,
+          "attributes": {
+            "ROUTING": "X4Y15/F2;;1;X4Y15/XD2;X4Y15/XD2/F2;1"
+          }
+        },
+        "clockCounter_DFFR_Q_4$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7846 ] ,
+          "attributes": {
+            "ROUTING": "X4Y15/F4;;1;X4Y15/XD4;X4Y15/XD4/F4;1"
+          }
+        },
+        "clockCounter_DFFR_Q_7$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7844 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/F2;;1;X3Y15/XD2;X3Y15/XD2/F2;1"
+          }
+        },
+        "clockCounter_DFFR_Q_8$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7842 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/F4;;1;X3Y15/XD4;X3Y15/XD4/F4;1"
+          }
+        },
+        "ledCounter_DFFE_Q_1$conn$D": {
+          "hide_name": 0,
+          "bits": [ 7840 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/F2;;1;X1Y17/XD2;X1Y17/XD2/F2;1"
+          }
+        },
+        "clockCounter_DFFR_Q_22_D_ALU_SUM_CIN_ALU_COUT_HEAD_ALULC": {
+          "hide_name": 0,
+          "bits": [ 7827 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/COUT0;;1"
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_CIN_ALU_COUT_HEAD_ALULC": {
+          "hide_name": 0,
+          "bits": [ 7825 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/COUT0;;1"
+          }
+        },
+        "led[0]": {
+          "hide_name": 0,
+          "bits": [ 7807 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "counter.v:4.18-4.21"
+          }
+        },
+        "led[1]": {
+          "hide_name": 0,
+          "bits": [ 7805 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "counter.v:4.18-4.21"
+          }
+        },
+        "led[2]": {
+          "hide_name": 0,
+          "bits": [ 7803 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "counter.v:4.18-4.21"
+          }
+        },
+        "led[3]": {
+          "hide_name": 0,
+          "bits": [ 7801 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "counter.v:4.18-4.21"
+          }
+        },
+        "led[4]": {
+          "hide_name": 0,
+          "bits": [ 7799 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "counter.v:4.18-4.21"
+          }
+        },
+        "led[5]": {
+          "hide_name": 0,
+          "bits": [ 7797 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "counter.v:4.18-4.21"
+          }
+        },
+        "ledCounter_DFFE_Q_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7793 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "0 ",
+            "src": "counter.v:15.23-15.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_1_S0[4]": {
+          "hide_name": 0,
+          "bits": [ 7785 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/F2;;1;X1Y15/E130;X1Y15/E130/F2;1;X1Y15/E260;X1Y15/E260/E130;1;X2Y15/SEL6;X2Y15/SEL6/E261;1",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_1_I1": {
+          "hide_name": 0,
+          "bits": [ 7784 ] ,
+          "attributes": {
+            "ROUTING": "X2Y15/F7;;1",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_1_I0": {
+          "hide_name": 0,
+          "bits": [ 7783 ] ,
+          "attributes": {
+            "ROUTING": "X2Y15/F6;;1",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_S0[4]": {
+          "hide_name": 0,
+          "bits": [ 7781 ] ,
+          "attributes": {
+            "ROUTING": "X2Y15/F5;;1;X2Y15/E250;X2Y15/E250/F5;1;X3Y15/X08;X3Y15/X08/E251;1;X3Y15/SEL6;X3Y15/SEL6/X08;1",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 7780 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/F7;;1",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 7779 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/F6;;1",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0[3]": {
+          "hide_name": 0,
+          "bits": [ 7775 ] ,
+          "attributes": {
+            "ROUTING": "X2Y15/OF6;;1;X2Y15/E130;X2Y15/E130/OF6;1;X3Y15/E270;X3Y15/E270/E131;1;X3Y15/D0;X3Y15/D0/E270;1",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0[2]": {
+          "hide_name": 0,
+          "bits": [ 7774 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/OF6;;1;X3Y15/W130;X3Y15/W130/OF6;1;X2Y15/W830;X2Y15/W830/W131;1;X5Y15/W260;X5Y15/W260/E838;1;X3Y15/C0;X3Y15/C0/W262;1",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0[1]": {
+          "hide_name": 0,
+          "bits": [ 7773 ] ,
+          "attributes": {
+            "ROUTING": "X5Y16/F7;;1;X5Y16/N130;X5Y16/N130/F7;1;X5Y15/W230;X5Y15/W230/N131;1;X3Y15/B0;X3Y15/B0/W232;1",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0[0]": {
+          "hide_name": 0,
+          "bits": [ 7772 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F7;;1;X4Y16/SN10;X4Y16/SN10/F7;1;X4Y15/W250;X4Y15/W250/N111;1;X3Y15/A0;X3Y15/A0/W251;1",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_5_D": {
+          "hide_name": 0,
+          "bits": [ 7769 ] ,
+          "attributes": {
+            "ROUTING": "X4Y15/F0;;1;X4Y15/XD0;X4Y15/XD0/F0;1"
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_CIN_ALU_COUT_SUM": {
+          "hide_name": 0,
+          "bits": [ 7767 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "0 "
+          }
+        },
+        "ledCounter[0]": {
+          "hide_name": 0,
+          "bits": [ 7766 ] ,
+          "attributes": {
+            "ROUTING": "X4Y15/X01;X4Y15/X01/Q0;1;X4Y15/A0;X4Y15/A0/X01;1;X4Y15/N130;X4Y15/N130/Q0;1;X4Y14/W270;X4Y14/W270/N131;1;X2Y14/W270;X2Y14/W270/W272;1;X0Y14/A0;X0Y14/A0/W272;1;X4Y15/Q0;;1;X4Y15/W200;X4Y15/W200/Q0;1;X2Y15/S200;X2Y15/S200/W202;1;X2Y17/X05;X2Y17/X05/S202;1;X2Y17/B1;X2Y17/B1/X05;1",
+            "src": "counter.v:8.11-8.21"
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_CIN": {
+          "hide_name": 0,
+          "bits": [ 7764 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/COUT1;;1",
+            "src": "counter.v:15.23-15.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter[1]": {
+          "hide_name": 0,
+          "bits": [ 7762 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/W220;X2Y17/W220/Q2;1;X0Y17/N220;X0Y17/N220/W222;1;X0Y15/D1;X0Y15/D1/N222;1;X2Y17/Q2;;1;X2Y17/X01;X2Y17/X01/Q2;1;X2Y17/B2;X2Y17/B2/X01;1",
+            "src": "counter.v:8.11-8.21"
+          }
+        },
+        "ledCounter_DFFE_Q_4_D": {
+          "hide_name": 0,
+          "bits": [ 7761 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/F2;;1;X2Y17/XD2;X2Y17/XD2/F2;1"
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7759 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/COUT2;;1",
+            "src": "counter.v:15.23-15.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter[2]": {
+          "hide_name": 0,
+          "bits": [ 7757 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/SN20;X2Y17/SN20/Q3;1;X2Y18/S220;X2Y18/S220/S121;1;X2Y20/W220;X2Y20/W220/S222;1;X0Y20/D1;X0Y20/D1/W222;1;X2Y17/Q3;;1;X2Y17/B3;X2Y17/B3/Q3;1",
+            "src": "counter.v:8.11-8.21"
+          }
+        },
+        "ledCounter_DFFE_Q_3_D": {
+          "hide_name": 0,
+          "bits": [ 7756 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/F3;;1;X2Y17/XD3;X2Y17/XD3/F3;1"
+          }
+        },
+        "ledCounter_DFFE_Q_3_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7754 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/COUT3;;1",
+            "src": "counter.v:15.23-15.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter[3]": {
+          "hide_name": 0,
+          "bits": [ 7752 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/S820;X2Y17/S820/Q4;1;X2Y21/W240;X2Y21/W240/S824;1;X0Y21/X03;X0Y21/X03/W242;1;X0Y21/D1;X0Y21/D1/X03;1;X2Y17/Q4;;1;X2Y17/W100;X2Y17/W100/Q4;1;X2Y17/B4;X2Y17/B4/W100;1",
+            "src": "counter.v:8.11-8.21"
+          }
+        },
+        "ledCounter_DFFE_Q_2_D": {
+          "hide_name": 0,
+          "bits": [ 7751 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/F4;;1;X2Y17/XD4;X2Y17/XD4/F4;1"
+          }
+        },
+        "ledCounter_DFFE_Q_1_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7749 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/CIN0;;1",
+            "src": "counter.v:15.23-15.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_2_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7748 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/COUT4;;1",
+            "src": "counter.v:15.23-15.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter[4]": {
+          "hide_name": 0,
+          "bits": [ 7746 ] ,
+          "attributes": {
+            "ROUTING": "X1Y17/EW10;X1Y17/EW10/Q2;1;X0Y17/S810;X0Y17/S810/W111;1;X0Y25/N100;X0Y25/N100/S818;1;X0Y24/D1;X0Y24/D1/N101;1;X1Y17/Q2;;1;X1Y17/E130;X1Y17/E130/Q2;1;X2Y17/B5;X2Y17/B5/E131;1",
+            "src": "counter.v:8.11-8.21"
+          }
+        },
+        "ledCounter_DFFE_Q_1_D": {
+          "hide_name": 0,
+          "bits": [ 7745 ] ,
+          "attributes": {
+            "ROUTING": "X2Y17/F5;;1;X2Y17/EW20;X2Y17/EW20/F5;1;X1Y17/D2;X1Y17/D2/W121;1"
+          }
+        },
+        "ledCounter[5]": {
+          "hide_name": 0,
+          "bits": [ 7743 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/S800;X3Y17/S800/Q0;1;X3Y25/W200;X3Y25/W200/S808;1;X1Y25/W200;X1Y25/W200/W202;1;X0Y25/D1;X0Y25/D1/W201;1;X3Y17/Q0;;1;X3Y17/S100;X3Y17/S100/Q0;1;X3Y17/B0;X3Y17/B0/S100;1",
+            "src": "counter.v:8.11-8.21"
+          }
+        },
+        "ledCounter_DFFE_Q_D": {
+          "hide_name": 0,
+          "bits": [ 7742 ] ,
+          "attributes": {
+            "ROUTING": "X3Y17/F0;;1;X3Y17/XD0;X3Y17/XD0/F0;1"
+          }
+        },
+        "clockCounter_DFFR_Q_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7740 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "0 ",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[14]": {
+          "hide_name": 0,
+          "bits": [ 7737 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/N100;X3Y16/N100/Q3;1;X3Y15/B7;X3Y15/B7/N101;1;X3Y16/B3;X3Y16/B3/Q3;1;X3Y16/Q3;;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_9_D": {
+          "hide_name": 0,
+          "bits": [ 7735 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/F3;;1;X3Y16/XD3;X3Y16/XD3/F3;1"
+          }
+        },
+        "clockCounter_DFFR_Q_9_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7733 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/COUT3;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[15]": {
+          "hide_name": 0,
+          "bits": [ 7731 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/S240;X3Y15/S240/Q4;1;X3Y16/X03;X3Y16/X03/S241;1;X3Y16/B4;X3Y16/B4/X03;1;X3Y15/Q4;;1;X3Y15/X03;X3Y15/X03/Q4;1;X3Y15/A7;X3Y15/A7/X03;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_8_D": {
+          "hide_name": 0,
+          "bits": [ 7729 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/F4;;1;X3Y16/N240;X3Y16/N240/F4;1;X3Y15/D4;X3Y15/D4/N241;1"
+          }
+        },
+        "clockCounter_DFFR_Q_8_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7727 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/COUT4;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[16]": {
+          "hide_name": 0,
+          "bits": [ 7725 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/SN20;X3Y15/SN20/Q2;1;X3Y16/B5;X3Y16/B5/S121;1;X3Y15/Q2;;1;X3Y15/E100;X3Y15/E100/Q2;1;X4Y15/S240;X4Y15/S240/E101;1;X4Y16/D7;X4Y16/D7/S241;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_7_D": {
+          "hide_name": 0,
+          "bits": [ 7724 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/F5;;1;X3Y16/N250;X3Y16/N250/F5;1;X3Y15/X06;X3Y15/X06/N251;1;X3Y15/D2;X3Y15/D2/X06;1"
+          }
+        },
+        "clockCounter_DFFR_Q_7_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7722 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/CIN0;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[17]": {
+          "hide_name": 0,
+          "bits": [ 7720 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/B0;X4Y16/B0/X05;1;X4Y16/Q0;;1;X4Y16/X05;X4Y16/X05/Q0;1;X4Y16/C7;X4Y16/C7/X05;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_6_D": {
+          "hide_name": 0,
+          "bits": [ 7719 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F0;;1;X4Y16/XD0;X4Y16/XD0/F0;1"
+          }
+        },
+        "clockCounter_DFFR_Q_6_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7717 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/COUT0;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[18]": {
+          "hide_name": 0,
+          "bits": [ 7715 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/B1;X4Y16/B1/Q1;1;X4Y16/Q1;;1;X4Y16/W130;X4Y16/W130/Q1;1;X4Y16/B7;X4Y16/B7/W130;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_5_D": {
+          "hide_name": 0,
+          "bits": [ 7714 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F1;;1;X4Y16/XD1;X4Y16/XD1/F1;1"
+          }
+        },
+        "clockCounter_DFFR_Q_5_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7712 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/COUT1;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[19]": {
+          "hide_name": 0,
+          "bits": [ 7710 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/W240;X4Y16/W240/S101;1;X4Y16/B2;X4Y16/B2/W240;1;X4Y15/Q4;;1;X4Y15/S100;X4Y15/S100/Q4;1;X4Y16/A7;X4Y16/A7/S101;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_4_D": {
+          "hide_name": 0,
+          "bits": [ 7709 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F2;;1;X4Y16/N130;X4Y16/N130/F2;1;X4Y15/D4;X4Y15/D4/N131;1"
+          }
+        },
+        "clockCounter_DFFR_Q_4_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7707 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/COUT2;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[20]": {
+          "hide_name": 0,
+          "bits": [ 7705 ] ,
+          "attributes": {
+            "ROUTING": "X4Y15/SN10;X4Y15/SN10/Q2;1;X4Y16/B3;X4Y16/B3/S111;1;X4Y15/Q2;;1;X4Y15/SN20;X4Y15/SN20/Q2;1;X4Y16/E220;X4Y16/E220/S121;1;X5Y16/D7;X5Y16/D7/E221;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_3_D": {
+          "hide_name": 0,
+          "bits": [ 7704 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F3;;1;X4Y16/N100;X4Y16/N100/F3;1;X4Y15/D2;X4Y15/D2/N101;1"
+          }
+        },
+        "clockCounter_DFFR_Q_3_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7702 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/COUT3;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter_DFFR_Q_23_D": {
+          "hide_name": 0,
+          "bits": [ 7699 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/F0;;1;X1Y15/XD0;X1Y15/XD0/F0;1"
+          }
+        },
+        "clockCounter_DFFR_Q_22_D_ALU_SUM_CIN_ALU_COUT_SUM": {
+          "hide_name": 0,
+          "bits": [ 7697 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "0 "
+          }
+        },
+        "clockCounter[0]": {
+          "hide_name": 0,
+          "bits": [ 7696 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/N100;X1Y15/N100/Q0;1;X1Y15/A0;X1Y15/A0/N100;1;X1Y15/W130;X1Y15/W130/Q0;1;X1Y15/D2;X1Y15/D2/W130;1;X1Y15/Q0;;1;X1Y15/SN10;X1Y15/SN10/Q0;1;X1Y16/B1;X1Y16/B1/S111;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_22_D_ALU_SUM_CIN": {
+          "hide_name": 0,
+          "bits": [ 7694 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/COUT1;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[1]": {
+          "hide_name": 0,
+          "bits": [ 7692 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/X01;X1Y16/X01/Q2;1;X1Y16/B2;X1Y16/B2/X01;1;X1Y16/Q2;;1;X1Y16/SN20;X1Y16/SN20/Q2;1;X1Y15/C2;X1Y15/C2/N121;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_22_D": {
+          "hide_name": 0,
+          "bits": [ 7691 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/F2;;1;X1Y16/XD2;X1Y16/XD2/F2;1"
+          }
+        },
+        "clockCounter_DFFR_Q_22_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7689 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/COUT2;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[2]": {
+          "hide_name": 0,
+          "bits": [ 7687 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/X03;X1Y15/X03/Q4;1;X1Y15/B2;X1Y15/B2/X03;1;X1Y15/Q4;;1;X1Y15/S100;X1Y15/S100/Q4;1;X1Y16/W240;X1Y16/W240/S101;1;X1Y16/B3;X1Y16/B3/W240;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_21_D": {
+          "hide_name": 0,
+          "bits": [ 7686 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/F3;;1;X1Y16/N130;X1Y16/N130/F3;1;X1Y15/D4;X1Y15/D4/N131;1"
+          }
+        },
+        "clockCounter_DFFR_Q_21_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7684 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/COUT3;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[3]": {
+          "hide_name": 0,
+          "bits": [ 7682 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/N130;X1Y15/N130/Q3;1;X1Y15/A2;X1Y15/A2/N130;1;X1Y15/Q3;;1;X1Y15/SN20;X1Y15/SN20/Q3;1;X1Y16/B4;X1Y16/B4/S121;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_20_D": {
+          "hide_name": 0,
+          "bits": [ 7681 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/F4;;1;X1Y16/N100;X1Y16/N100/F4;1;X1Y15/D3;X1Y15/D3/N101;1"
+          }
+        },
+        "clockCounter[21]": {
+          "hide_name": 0,
+          "bits": [ 7679 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/X03;X4Y16/X03/Q4;1;X4Y16/B4;X4Y16/B4/X03;1;X4Y16/Q4;;1;X4Y16/EW20;X4Y16/EW20/Q4;1;X5Y16/C7;X5Y16/C7/E121;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_2_D": {
+          "hide_name": 0,
+          "bits": [ 7678 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F4;;1;X4Y16/XD4;X4Y16/XD4/F4;1"
+          }
+        },
+        "clockCounter_DFFR_Q_D_ALU_SUM_CIN": {
+          "hide_name": 0,
+          "bits": [ 7676 ] ,
+          "attributes": {
+            "ROUTING": "X5Y16/CIN0;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter_DFFR_Q_2_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7675 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/COUT4;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter_DFFR_Q_20_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7673 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/COUT4;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[4]": {
+          "hide_name": 0,
+          "bits": [ 7671 ] ,
+          "attributes": {
+            "ROUTING": "X1Y15/E100;X1Y15/E100/Q1;1;X2Y15/D7;X2Y15/D7/E101;1;X1Y15/Q1;;1;X1Y15/S210;X1Y15/S210/Q1;1;X1Y16/X08;X1Y16/X08/S211;1;X1Y16/B5;X1Y16/B5/X08;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_19_D": {
+          "hide_name": 0,
+          "bits": [ 7669 ] ,
+          "attributes": {
+            "ROUTING": "X1Y16/F5;;1;X1Y16/N250;X1Y16/N250/F5;1;X1Y15/X06;X1Y15/X06/N251;1;X1Y15/D1;X1Y15/D1/X06;1"
+          }
+        },
+        "clockCounter_DFFR_Q_19_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7667 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/CIN0;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[5]": {
+          "hide_name": 0,
+          "bits": [ 7665 ] ,
+          "attributes": {
+            "ROUTING": "X2Y15/N130;X2Y15/N130/Q4;1;X2Y15/C7;X2Y15/C7/N130;1;X2Y15/Q4;;1;X2Y15/SN10;X2Y15/SN10/Q4;1;X2Y16/B0;X2Y16/B0/S111;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_18_D": {
+          "hide_name": 0,
+          "bits": [ 7663 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/F0;;1;X2Y16/N130;X2Y16/N130/F0;1;X2Y15/D4;X2Y15/D4/N131;1"
+          }
+        },
+        "clockCounter_DFFR_Q_18_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7661 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/COUT0;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[6]": {
+          "hide_name": 0,
+          "bits": [ 7659 ] ,
+          "attributes": {
+            "ROUTING": "X2Y15/W130;X2Y15/W130/Q3;1;X2Y15/B7;X2Y15/B7/W130;1;X2Y15/Q3;;1;X2Y15/S230;X2Y15/S230/Q3;1;X2Y16/B1;X2Y16/B1/S231;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_17_D": {
+          "hide_name": 0,
+          "bits": [ 7657 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/F1;;1;X2Y16/N100;X2Y16/N100/F1;1;X2Y15/D3;X2Y15/D3/N101;1"
+          }
+        },
+        "clockCounter_DFFR_Q_17_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7655 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/COUT1;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[7]": {
+          "hide_name": 0,
+          "bits": [ 7653 ] ,
+          "attributes": {
+            "ROUTING": "X2Y15/A7;X2Y15/A7/S210;1;X2Y15/Q1;;1;X2Y15/S210;X2Y15/S210/Q1;1;X2Y16/B2;X2Y16/B2/S211;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_16_D": {
+          "hide_name": 0,
+          "bits": [ 7651 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/F2;;1;X2Y16/N220;X2Y16/N220/F2;1;X2Y15/D1;X2Y15/D1/N221;1"
+          }
+        },
+        "clockCounter_DFFR_Q_16_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7649 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/COUT2;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[8]": {
+          "hide_name": 0,
+          "bits": [ 7647 ] ,
+          "attributes": {
+            "ROUTING": "X2Y15/D5;X2Y15/D5/S100;1;X2Y15/Q2;;1;X2Y15/S100;X2Y15/S100/Q2;1;X2Y16/W240;X2Y16/W240/S101;1;X2Y16/B3;X2Y16/B3/W240;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_15_D": {
+          "hide_name": 0,
+          "bits": [ 7646 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/F3;;1;X2Y16/N230;X2Y16/N230/F3;1;X2Y15/X08;X2Y15/X08/N231;1;X2Y15/D2;X2Y15/D2/X08;1"
+          }
+        },
+        "clockCounter_DFFR_Q_15_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7644 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/COUT3;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[9]": {
+          "hide_name": 0,
+          "bits": [ 7642 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/X03;X2Y16/X03/Q4;1;X2Y16/B4;X2Y16/B4/X03;1;X2Y16/Q4;;1;X2Y16/SN10;X2Y16/SN10/Q4;1;X2Y15/C5;X2Y15/C5/N111;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_14_D": {
+          "hide_name": 0,
+          "bits": [ 7641 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/F4;;1;X2Y16/XD4;X2Y16/XD4/F4;1"
+          }
+        },
+        "clockCounter_DFFR_Q_14_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7639 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/COUT4;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[10]": {
+          "hide_name": 0,
+          "bits": [ 7637 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/N250;X2Y16/N250/Q5;1;X2Y15/B5;X2Y15/B5/N251;1;X2Y16/Q5;;1;X2Y16/X08;X2Y16/X08/Q5;1;X2Y16/B5;X2Y16/B5/X08;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_13_D": {
+          "hide_name": 0,
+          "bits": [ 7636 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/F5;;1;X2Y16/XD5;X2Y16/XD5/F5;1"
+          }
+        },
+        "clockCounter_DFFR_Q_13_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7634 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/CIN0;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[11]": {
+          "hide_name": 0,
+          "bits": [ 7632 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/W250;X3Y15/W250/Q5;1;X2Y15/A5;X2Y15/A5/W251;1;X3Y15/Q5;;1;X3Y15/S100;X3Y15/S100/Q5;1;X3Y16/S240;X3Y16/S240/S101;1;X3Y16/B0;X3Y16/B0/S240;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_12_D": {
+          "hide_name": 0,
+          "bits": [ 7631 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/F0;;1;X3Y16/N130;X3Y16/N130/F0;1;X3Y15/D5;X3Y15/D5/N131;1"
+          }
+        },
+        "clockCounter_DFFR_Q_12_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7629 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/COUT0;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[12]": {
+          "hide_name": 0,
+          "bits": [ 7627 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/X02;X3Y15/X02/Q1;1;X3Y15/D7;X3Y15/D7/X02;1;X3Y15/Q1;;1;X3Y15/S210;X3Y15/S210/Q1;1;X3Y16/B1;X3Y16/B1/S211;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_11_D": {
+          "hide_name": 0,
+          "bits": [ 7625 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/F1;;1;X3Y16/E100;X3Y16/E100/F1;1;X3Y16/N220;X3Y16/N220/E100;1;X3Y15/D1;X3Y15/D1/N221;1"
+          }
+        },
+        "$PACKER_GND": {
+          "hide_name": 1,
+          "bits": [ 7821 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/A4;X3Y16/A4/S231;1;X1Y16/A2;X1Y16/A2/N210;1;X1Y16/A5;X1Y16/A5/W210;1;X1Y16/W210;X1Y16/W210/VSS;1;X1Y16/A4;X1Y16/A4/W210;1;X2Y16/A1;X2Y16/A1/E210;1;X3Y16/A2;X3Y16/A2/N210;1;X1Y16/N210;X1Y16/N210/VSS;1;X1Y16/A3;X1Y16/A3/N210;1;X3Y16/N210;X3Y16/N210/VSS;1;X3Y16/A3;X3Y16/A3/N210;1;X5Y16/E210;X5Y16/E210/VSS;1;X5Y16/A0;X5Y16/A0/E210;1;X4Y16/A2;X4Y16/A2/N210;1;X2Y16/A5;X2Y16/A5/W210;1;X2Y17/A2;X2Y17/A2/N210;1;X2Y16/A3;X2Y16/A3/N210;1;X3Y15/S230;X3Y15/S230/VSS;1;X3Y16/A5;X3Y16/A5/S231;1;X3Y16/A1;X3Y16/A1/E210;1;X2Y17/N210;X2Y17/N210/VSS;1;X2Y17/A3;X2Y17/A3/N210;1;X2Y16/W210;X2Y16/W210/VSS;1;X2Y16/A4;X2Y16/A4/W210;1;X3Y17/E210;X3Y17/E210/VSS;1;X3Y17/A0;X3Y17/A0/E210;1;X4Y16/A0;X4Y16/A0/E210;1;X2Y16/N210;X2Y16/N210/VSS;1;X2Y16/A2;X2Y16/A2/N210;1;X4Y16/A5;X4Y16/A5/W210;1;X2Y17/A5;X2Y17/A5/W210;1;X4Y16/W210;X4Y16/W210/VSS;1;X4Y16/A4;X4Y16/A4/W210;1;X4Y16/E210;X4Y16/E210/VSS;1;X4Y16/A1;X4Y16/A1/E210;1;X2Y16/E210;X2Y16/E210/VSS;1;X2Y16/A0;X2Y16/A0/E210;1;X4Y16/N210;X4Y16/N210/VSS;1;X4Y16/A3;X4Y16/A3/N210;1;X2Y17/W210;X2Y17/W210/VSS;1;X2Y17/A4;X2Y17/A4/W210;1;X0Y0/VSS;;1;X3Y16/E210;X3Y16/E210/VSS;1;X3Y16/A0;X3Y16/A0/E210;1"
+          }
+        },
+        "$PACKER_VCC": {
+          "hide_name": 1,
+          "bits": [ 7820 ] ,
+          "attributes": {
+            "ROUTING": "X2Y16/D5;X2Y16/D5/X04;1;X4Y16/D1;X4Y16/D1/X08;1;X3Y16/C2;X3Y16/C2/X04;1;X4Y16/C2;X4Y16/C2/X04;1;X2Y17/C2;X2Y17/C2/X04;1;X1Y16/D1;X1Y16/D1/X03;1;X2Y17/C5;X2Y17/C5/S220;1;X2Y17/D4;X2Y17/D4/X04;1;X1Y16/C0;X1Y16/C0/X04;1;X3Y16/D0;X3Y16/D0/X08;1;X2Y17/D2;X2Y17/D2/X03;1;X1Y16/C1;X1Y16/C1/X04;1;X3Y16/C1;X3Y16/C1/X04;1;X4Y16/C4;X4Y16/C4/X08;1;X0Y0/S220;X0Y0/S220/VCC;1;X0Y0/C4;X0Y0/C4/S220;1;X3Y17/X03;X3Y17/X03/VCC;1;X3Y17/D0;X3Y17/D0/X03;1;X2Y17/D5;X2Y17/D5/X04;1;X3Y16/C5;X3Y16/C5/X08;1;X3Y16/D3;X3Y16/D3/X08;1;X2Y17/A1;X2Y17/A1/X03;1;X3Y16/D4;X3Y16/D4/X04;1;X1Y16/D4;X1Y16/D4/X04;1;X1Y16/A1;X1Y16/A1/X03;1;X4Y16/D3;X4Y16/D3/X08;1;X2Y17/S220;X2Y17/S220/VCC;1;X2Y17/C4;X2Y17/C4/S220;1;X2Y16/C0;X2Y16/C0/X04;1;X2Y17/D1;X2Y17/D1/X03;1;X3Y17/N220;X3Y17/N220/VCC;1;X3Y17/C0;X3Y17/C0/N220;1;X3Y16/C3;X3Y16/C3/X04;1;X2Y16/C1;X2Y16/C1/X04;1;X2Y17/C0;X2Y17/C0/X04;1;X4Y16/D5;X4Y16/D5/X04;1;X3Y16/D5;X3Y16/D5/X04;1;X4Y16/D0;X4Y16/D0/X08;1;X1Y16/C5;X1Y16/C5/S220;1;X2Y16/D2;X2Y16/D2/S270;1;X3Y16/C4;X3Y16/C4/X08;1;X5Y16/X08;X5Y16/X08/VCC;1;X5Y16/D0;X5Y16/D0/X08;1;X5Y16/X04;X5Y16/X04/VCC;1;X5Y16/C0;X5Y16/C0/X04;1;X3Y16/D2;X3Y16/D2/X08;1;X2Y16/S270;X2Y16/S270/VCC;1;X2Y16/D3;X2Y16/D3/S270;1;X4Y16/X04;X4Y16/X04/VCC;1;X4Y16/D4;X4Y16/D4/X04;1;X4Y16/C5;X4Y16/C5/X08;1;X3Y16/X04;X3Y16/X04/VCC;1;X3Y16/C0;X3Y16/C0/X04;1;X1Y16/X04;X1Y16/X04/VCC;1;X1Y16/C3;X1Y16/C3/X04;1;X4Y16/X08;X4Y16/X08/VCC;1;X4Y16/D2;X4Y16/D2/X08;1;X2Y16/D4;X2Y16/D4/X04;1;X3Y16/X08;X3Y16/X08/VCC;1;X3Y16/D1;X3Y16/D1/X08;1;X2Y16/C3;X2Y16/C3/X04;1;X2Y17/C1;X2Y17/C1/X04;1;X1Y16/D2;X1Y16/D2/X03;1;X2Y16/C5;X2Y16/C5/S220;1;X2Y16/X04;X2Y16/X04/VCC;1;X2Y16/C2;X2Y16/C2/X04;1;X1Y16/X03;X1Y16/X03/VCC;1;X1Y16/D3;X1Y16/D3/X03;1;X2Y17/X04;X2Y17/X04/VCC;1;X2Y17/C3;X2Y17/C3/X04;1;X1Y16/S220;X1Y16/S220/VCC;1;X1Y16/C4;X1Y16/C4/S220;1;X2Y17/X03;X2Y17/X03/VCC;1;X2Y17/D3;X2Y17/D3/X03;1;X2Y16/S220;X2Y16/S220/VCC;1;X2Y16/C4;X2Y16/C4/S220;1;X4Y16/C0;X4Y16/C0/N220;1;X1Y16/N260;X1Y16/N260/VCC;1;X1Y16/D5;X1Y16/D5/N260;1;X4Y16/W220;X4Y16/W220/VCC;1;X4Y16/C3;X4Y16/C3/W220;1;X1Y16/C2;X1Y16/C2/X04;1;X2Y16/D1;X2Y16/D1/E270;1;X4Y16/N220;X4Y16/N220/VCC;1;X4Y16/C1;X4Y16/C1/N220;1;X0Y0/VCC;;1;X2Y16/E270;X2Y16/E270/VCC;1;X2Y16/D0;X2Y16/D0/E270;1"
+          }
+        },
+        "clockCounter_DFFR_Q_10_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7621 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/COUT2;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter_DFFR_Q_11_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 7620 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/COUT1;;1",
+            "src": "counter.v:12.21-12.37|/usr/local/bin/../share/yosys/gowin/arith_map.v:57.7-63.5|/usr/local/bin/../share/yosys/gowin/cells_sim.v:938.25-938.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[13]": {
+          "hide_name": 0,
+          "bits": [ 7618 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/X01;X3Y16/X01/Q2;1;X3Y16/B2;X3Y16/B2/X01;1;X3Y16/Q2;;1;X3Y16/SN10;X3Y16/SN10/Q2;1;X3Y15/C7;X3Y15/C7/N111;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/usr/local/bin/../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_10_D": {
+          "hide_name": 0,
+          "bits": [ 7616 ] ,
+          "attributes": {
+            "ROUTING": "X3Y16/F2;;1;X3Y16/XD2;X3Y16/XD2/F2;1"
+          }
+        },
+        "clockCounter[22]": {
+          "hide_name": 0,
+          "bits": [ 7614 ] ,
+          "attributes": {
+            "ROUTING": "X5Y16/EW10;X5Y16/EW10/Q4;1;X4Y16/B5;X4Y16/B5/W111;1;X5Y16/Q4;;1;X5Y16/X07;X5Y16/X07/Q4;1;X5Y16/B7;X5Y16/B7/X07;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_1_D": {
+          "hide_name": 0,
+          "bits": [ 7613 ] ,
+          "attributes": {
+            "ROUTING": "X4Y16/F5;;1;X4Y16/E100;X4Y16/E100/F5;1;X5Y16/D4;X5Y16/D4/E101;1"
+          }
+        },
+        "ledCounter_DFFE_Q_CE": {
+          "hide_name": 0,
+          "bits": [ 7610 ] ,
+          "attributes": {
+            "ROUTING": "X3Y15/LSR2;X3Y15/LSR2/X05;1;X3Y15/LSR1;X3Y15/LSR1/X05;1;X3Y15/X05;X3Y15/X05/F0;1;X3Y15/LSR0;X3Y15/LSR0/X05;1;X2Y15/LSR1;X2Y15/LSR1/X05;1;X2Y15/LSR2;X2Y15/LSR2/X05;1;X3Y16/X07;X3Y16/X07/S201;1;X3Y16/LSR1;X3Y16/LSR1/X07;1;X3Y15/E200;X3Y15/E200/F0;1;X4Y15/X05;X4Y15/X05/E201;1;X4Y15/LSR1;X4Y15/LSR1/X05;1;X4Y15/CE0;X4Y15/CE0/X05;1;X2Y15/X05;X2Y15/X05/W201;1;X4Y15/LSR2;X4Y15/LSR2/X05;1;X2Y15/LSR0;X2Y15/LSR0/X05;1;X2Y16/LSR2;X2Y16/LSR2/W211;1;X1Y16/LSR1;X1Y16/LSR1/W212;1;X2Y17/CE2;X2Y17/CE2/X08;1;X3Y15/SN10;X3Y15/SN10/F0;1;X1Y15/LSR1;X1Y15/LSR1/X05;1;X1Y15/LSR2;X1Y15/LSR2/X05;1;X3Y15/S200;X3Y15/S200/F0;1;X3Y17/X05;X3Y17/X05/S202;1;X3Y17/CE0;X3Y17/CE0/X05;1;X1Y15/X05;X1Y15/X05/W202;1;X1Y15/LSR0;X1Y15/LSR0/X05;1;X2Y17/CE1;X2Y17/CE1/X08;1;X3Y16/W210;X3Y16/W210/S111;1;X2Y17/X08;X2Y17/X08/S252;1;X2Y15/S250;X2Y15/S250/W111;1;X5Y16/LSR2;X5Y16/LSR2/E272;1;X3Y15/EW10;X3Y15/EW10/F0;1;X4Y16/LSR0;X4Y16/LSR0/E271;1;X4Y16/LSR2;X4Y16/LSR2/E271;1;X3Y15/S130;X3Y15/S130/F0;1;X3Y16/E270;X3Y16/E270/S131;1;X5Y16/LSR1;X5Y16/LSR1/E272;1;X3Y15/F0;;1;X3Y15/W200;X3Y15/W200/F0;1;X1Y15/S200;X1Y15/S200/W202;1;X1Y17/X05;X1Y17/X05/S202;1;X1Y17/CE1;X1Y17/CE1/X05;1"
+          }
+        },
+        "clockCounter[23]": {
+          "hide_name": 0,
+          "bits": [ 7609 ] ,
+          "attributes": {
+            "ROUTING": "X5Y16/X05;X5Y16/X05/Q2;1;X5Y16/B0;X5Y16/B0/X05;1;X5Y16/Q2;;1;X5Y16/X01;X5Y16/X01/Q2;1;X5Y16/A7;X5Y16/A7/X01;1",
+            "src": "counter.v:9.12-9.24"
+          }
+        },
+        "clockCounter_DFFR_Q_D": {
+          "hide_name": 0,
+          "bits": [ 7608 ] ,
+          "attributes": {
+            "ROUTING": "X5Y16/F0;;1;X5Y16/D2;X5Y16/D2/F0;1"
+          }
+        },
+        "clk_IBUF_I_O": {
+          "hide_name": 0,
+          "bits": [ 7605 ] ,
+          "attributes": {
+            "ROUTING": "X4Y15/CLK0;X4Y15/CLK0/GB00;5;X2Y17/CLK1;X2Y17/CLK1/GB00;5;X2Y17/CLK2;X2Y17/CLK2/GB00;5;X1Y17/CLK1;X1Y17/CLK1/GB00;5;X2Y17/GB00;X3Y17/GBO0/GT00;5;X3Y17/CLK0;X3Y17/CLK0/GB00;5;X3Y15/CLK1;X3Y15/CLK1/GB00;5;X4Y16/CLK0;X4Y16/CLK0/GB00;5;X4Y15/CLK2;X4Y15/CLK2/GB00;5;X4Y15/CLK1;X4Y15/CLK1/GB00;5;X1Y16/CLK1;X1Y16/CLK1/GB00;5;X1Y15/CLK2;X1Y15/CLK2/GB00;5;X1Y15/CLK1;X1Y15/CLK1/GB00;5;X4Y16/CLK2;X4Y16/CLK2/GB00;5;X1Y15/CLK0;X1Y15/CLK0/GB00;5;X2Y15/CLK2;X2Y15/CLK2/GB00;5;X2Y15/CLK0;X2Y15/CLK0/GB00;5;X2Y15/CLK1;X2Y15/CLK1/GB00;5;X2Y16/CLK2;X2Y16/CLK2/GB00;5;X3Y15/CLK2;X3Y15/CLK2/GB00;5;X4Y15/GB00;X3Y15/GBO0/GT00;5;X3Y15/CLK0;X3Y15/CLK0/GB00;5;X3Y16/CLK1;X3Y16/CLK1/GB00;5;X5Y16/CLK2;X5Y16/CLK2/GB00;5;X11Y19/SPINE16;X27Y9/SPINE16/PCLKR1;5;X3Y24/GT00;X3Y19/GT00/SPINE16;5;X3Y16/GBO0;X3Y16/GBO0/GT00;5;X5Y16/CLK1;X5Y16/CLK1/GB00;5;X30Y9/PCLKR1;;5"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 7601 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "counter.v:3.11-3.14"
+          }
+        }
+      }
+    }
+  }
+}
